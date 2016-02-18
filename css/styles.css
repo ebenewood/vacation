@@ -92,3 +92,19 @@ body {
   }
 }
 /* end of narrow jumbotron code */
+
+/*.jumbotron {
+  display: none;
+}*/
+
+.noshow {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+span {
+  display: none;
+}

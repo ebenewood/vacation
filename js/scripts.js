@@ -1,14 +1,18 @@
 $(function() {
+  jumboVisit = true;
+  if (jumboVisit) {
     $('.jumbotron').fadeIn(1000);
-    $('h1').fadeIn();
+      $('h1').fadeIn();
     $('.jumbotron').hover(function() {
+      jumboVisit = false;
       $('h1').fadeOut(function() {
         $('h1').text('are you...');
         $('h1').fadeIn();
         $('input[name=question1]').delay(500).fadeIn();
         $('span.q1').fadeIn(1000);
       });
-  });
+    })}
+  else;
   $(function() {
     $('input[value=bored]').click(function() {
       $('.h1').fadeOut();
